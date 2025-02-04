@@ -1,80 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Dev Repository</title>
-  <!-- Link to your external CSS file -->
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameDevRepo</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Header / Navigation -->
   <header>
-    <h1>Game Dev Repository</h1>
-    <nav>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <h1 class="logo">GameDevRepo</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      
-      <!-- Example Project 1 -->
-      <article>
-        <h3>Project Title One</h3>
-        <p>A brief description of the project, its technologies, and goals.</p>
-        <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a>
-      </article>
-
-      <!-- Example Project 2 -->
-      <article>
-        <h3>Project Title Two</h3>
-        <p>A brief description of the project, its technologies, and goals.</p>
-        <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub</a>
-      </article>
-
-      <!-- Add more projects as needed -->
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <h2>About</h2>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container hero-container">
+      <h2>Welcome to the Game Development Repository</h2>
       <p>
-        Welcome to my game development repository. I am a game developer passionate about creating immersive gaming experiences. Here you can find my projects, tools, and experiments.
+        Discover my latest projects, insights, and experiments in game
+        development. Dive into immersive experiences and innovative gameplay.
       </p>
-    </section>
+      <a href="#projects" class="btn">Explore Projects</a>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="submit_form.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3>Project One</h3>
+          <p>
+            An immersive 3D adventure with cutting-edge graphics and gameplay
+            mechanics.
+          </p>
+          <a href="https://github.com/yourusername/project-one" target="_blank"
+            >View on GitHub</a
+          >
+        </article>
+        <article class="project">
+          <h3>Project Two</h3>
+          <p>
+            A puzzle platformer that challenges the mind and excites the senses.
+          </p>
+          <a href="https://github.com/yourusername/project-two" target="_blank"
+            >View on GitHub</a
+          >
+        </article>
+        <article class="project">
+          <h3>Project Three</h3>
+          <p>
+            An experimental project exploring the boundaries of AI in gaming.
+          </p>
+          <a
+            href="https://github.com/yourusername/project-three"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </article>
+      </div>
+    </div>
+  </section>
 
-        <br>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate game developer dedicated to creating engaging and
+        innovative gaming experiences. With a background in programming and
+        design, I merge creativity with technology to bring unique projects to
+        life.
+      </p>
+      <div class="skills">
+        <div class="skill">
+          <h3>Programming</h3>
+          <p>Proficient in C++, C#, JavaScript, and Python.</p>
+        </div>
+        <div class="skill">
+          <h3>Design</h3>
+          <p>
+            Experienced with Unity, Unreal Engine, and various graphic design
+            tools.
+          </p>
+        </div>
+        <div class="skill">
+          <h3>Collaboration</h3>
+          <p>
+            Skilled in agile development and remote teamwork, delivering projects on time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="container">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-grid">
+        <article class="blog-post">
+          <h3>Designing Immersive Game Worlds</h3>
+          <p>
+            Explore techniques for building believable, engaging environments that captivate players.
+          </p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="blog-post">
+          <h3>The Future of AI in Games</h3>
+          <p>
+            A look at how artificial intelligence is transforming gameplay and development.
+          </p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="blog-post">
+          <h3>Tips for Indie Developers</h3>
+          <p>
+            Practical advice for overcoming challenges in the world of independent game development.
+          </p>
+          <a href="#">Read More</a>
+        </article>
+      </div>
+    </div>
+  </section>
 
-        <br>
+  
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <br>
-
-        <input type="submit" value="Send Message">
-      </form>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Game Dev Repository. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 GameDevRepo. All rights reserved.</p>
+      <div class="social">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
