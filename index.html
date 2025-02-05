@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameDevRepo</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameDevRepo🐈‍⬛ - Home</title>
+  <link rel="icon" href="/images/pfp.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
   <header>
-    <div class="container header-container">
+    <div class="container">
       <h1 class="logo">GameDevRepo</h1>
       <nav>
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -33,129 +24,31 @@
 
   <!-- Hero Section -->
   <section id="hero">
-    <div class="container hero-container">
-      <h2>Welcome to the Game Development Repository</h2>
-      <p>
-        Discover my latest projects, insights, and experiments in game
-        development. Dive into immersive experiences and innovative gameplay.
-      </p>
-      <a href="#projects" class="btn">Explore Projects</a>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-        <article class="project">
-          <h3>Project One</h3>
-          <p>
-            An immersive 3D adventure with cutting-edge graphics and gameplay
-            mechanics.
-          </p>
-          <a href="https://github.com/yourusername/project-one" target="_blank"
-            >View on GitHub</a
-          >
-        </article>
-        <article class="project">
-          <h3>Project Two</h3>
-          <p>
-            A puzzle platformer that challenges the mind and excites the senses.
-          </p>
-          <a href="https://github.com/yourusername/project-two" target="_blank"
-            >View on GitHub</a
-          >
-        </article>
-        <article class="project">
-          <h3>Project Three</h3>
-          <p>
-            An experimental project exploring the boundaries of AI in gaming.
-          </p>
-          <a
-            href="https://github.com/yourusername/project-three"
-            target="_blank"
-            >View on GitHub</a
-          >
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate game developer dedicated to creating engaging and
-        innovative gaming experiences. With a background in programming and
-        design, I merge creativity with technology to bring unique projects to
-        life.
-      </p>
-      <div class="skills">
-        <div class="skill">
-          <h3>Programming</h3>
-          <p>Proficient in C++, C#, JavaScript, and Python.</p>
-        </div>
-        <div class="skill">
-          <h3>Design</h3>
-          <p>
-            Experienced with Unity, Unreal Engine, and various graphic design
-            tools.
-          </p>
-        </div>
-        <div class="skill">
-          <h3>Collaboration</h3>
-          <p>
-            Skilled in agile development and remote teamwork, delivering projects on time.
-          </p>
+    <div class="speech-bubble">
+        <div class="speech-content">
+          <h1 id="typewriter-hi"></h1> 
+          <h2 id="typewriter-name"></h2>
+          <p id="typewriter-desc"></p>
+          <p id="typewriter-link"></p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Blog Section -->
-  <section id="blog">
-    <div class="container">
-      <h2>Latest Blog Posts</h2>
-      <div class="blog-grid">
-        <article class="blog-post">
-          <h3>Designing Immersive Game Worlds</h3>
-          <p>
-            Explore techniques for building believable, engaging environments that captivate players.
-          </p>
-          <a href="#">Read More</a>
-        </article>
-        <article class="blog-post">
-          <h3>The Future of AI in Games</h3>
-          <p>
-            A look at how artificial intelligence is transforming gameplay and development.
-          </p>
-          <a href="#">Read More</a>
-        </article>
-        <article class="blog-post">
-          <h3>Tips for Indie Developers</h3>
-          <p>
-            Practical advice for overcoming challenges in the world of independent game development.
-          </p>
-          <a href="#">Read More</a>
-        </article>
+      <div class="profile-picture">
+        <img src="/images/pfp.png" alt="Profile Picture">
       </div>
-    </div>
   </section>
-
-  
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="container footer-container">
       <p>&copy; 2025 GameDevRepo. All rights reserved.</p>
       <div class="social">
-        <a href="#" target="_blank">GitHub</a>
+        <a href="https://github.com/JaspervanDongen" target="_blank">GitHub</a>
         <a href="#" target="_blank">Twitter</a>
         <a href="#" target="_blank">LinkedIn</a>
       </div>
     </div>
   </footer>
+  <script src="script.js"></script> 
 </body>
 </html>
